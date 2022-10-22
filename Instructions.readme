@@ -1,0 +1,6 @@
+﻿R e a d m e
+-----------
+
+this is a spaceship autopilot script,it can running in atmosphere and space.
+it will travel fastly as it can to the target, if you run it with a gps info.
+if you run it with nothing, it will stop currently.
