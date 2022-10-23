@@ -67,8 +67,8 @@ namespace IngameScript
                 }
             }
 
-            public virtual void Start() { }
-            public virtual void Update() { }
+            protected virtual void Start() { }
+            protected virtual void Update() { }
 
         }
     }

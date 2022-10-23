@@ -74,7 +74,7 @@ namespace IngameScript
                 }
             }
 
-            public override void Update()
+            protected override void Update()
             {
                 if (Math.Abs(_cockpit.RollIndicator) >= 0.03 || _cockpit.RotationIndicator.Length() >= 0.03)
                 {

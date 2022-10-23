@@ -26,6 +26,7 @@ namespace IngameScript
 
         public Program()
         {
+            Runtime.UpdateFrequency = UpdateFrequency.Update10;
             autopilot = new Autopilot(this, 1.0 / 6);
         }
 
@@ -43,15 +44,15 @@ namespace IngameScript
                 if (target.Length < 5)
                 {
                     Echo("AutoPilot Stop!!!");
-                    Runtime.UpdateFrequency = UpdateFrequency.None;
+                    //Runtime.UpdateFrequency = UpdateFrequency.None;
                     return;
                 }
                 double x, y, z;
                 double.TryParse(target[2], out x);
                 double.TryParse(target[3], out y);
                 double.TryParse(target[4], out z);
-                Runtime.UpdateFrequency = UpdateFrequency.Update10;
-                autopilot.FastTravelTo(new Vector3D(x,y,z));
+                //Runtime.UpdateFrequency = UpdateFrequency.Update10;
+                //autopilot.FastTravelTo(new Vector3D(x,y,z));
             }
             RunCoroutines(argument, updateSource);
         }
